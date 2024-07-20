@@ -4,4 +4,4 @@ profile:
 linter: jetbrains/qodana-jvm:2024.1
 projectJDK: "21"
 include:
-  - name: VulnerableLibrariesGlobal
+  - name: VulnerableLibrariesGlobal, JvmCoverageInspection
