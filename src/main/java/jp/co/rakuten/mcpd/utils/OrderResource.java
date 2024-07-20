@@ -1,5 +1,6 @@
 package jp.co.rakuten.mcpd.utils;
 
+import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
@@ -15,6 +16,7 @@ public class OrderResource {
 
     OrderService orderService;
 
+    @Inject
     public OrderResource(OrderService orderService) {
         this.orderService = orderService;
     }
